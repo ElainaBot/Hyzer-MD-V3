@@ -40,7 +40,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'gamestore', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'MENU UTAMA',
@@ -59,7 +59,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'internet': 'INTERNET',
   'islam' : 'MENU ISLAMI',
   'kerang': 'MENU KERANG',
-  'maker': 'MENU MAKER',
+  'gamestore': 'MENU GAMESTORE',
   'owner': 'MENU OWNER',
   'Pengubah Suara': 'PENGUBAH SUARA',
   'premium': 'PREMIUM MENU',
@@ -118,8 +118,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'kerang') tags = {
   'kerang': 'MENU KERANG',
   }
-  if (teks == 'maker') tags = {
-  'maker': 'MENU MAKER',
+  if (teks == 'gamestore') tags = {
+  'gamestore': 'MENU GAMESTORE',
   }
   if (teks == 'owner') tags = {
     'owner': 'Owner',
@@ -484,7 +484,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
                {
              quickReplyButton: {
-               displayText: 'RULES ARULLBOTZMD',
+               displayText: 'RULES ZII STORE',
                id: '.rules',
              }
 
