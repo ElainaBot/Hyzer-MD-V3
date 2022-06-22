@@ -2,16 +2,16 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fs = require('fs')
 let handler = async (m) => {
 let krizyn = `
-╭─────{ *R͓̽U͓̽L͓̽E͓̽S͓̽* }─────
-│•Dιʅαɾαɳɠ Hιɳα Oɯɳҽɾ
-│•Dιʅαɾαɳɠ Sραɱ
-│•Dιʅαɾαɳɠ Tҽʅρ / Vƈ
-│•Jαɳɠαɳ ƈυʅιƙ Ⴆσƚ ɠɯ αɳʝιɳɠ
-│•Bσƚ Tιԃαƙ Mҽɳҽɾιɱα Sαʋҽ Kσɳƚαƙ
+╭─────{ *📌RULES* }─────
+│  *📌DILARANG*
+│➸ *DILARANG SHARE LINK PHISING/DLL
+│➸ *DILARANG KIRIM PESAN/STICKER/FOTO/VIDEO FORNOGRAFI*
+│➸ *DILARANG SPAM PESAN/STICKER/FOTO/VIDEO*
+│➸ *DILARANG BERBICARA KASAR*
 ┬
 ╰──────────···
-╭─────{ *H͓̽U͓̽K͓̽U͓̽M͓̽* }─────
-│•KυႦʅσƈƙ Lυ αɳʝιɳɠ
+╭─────{ *📌HUKUMAN* }─────
+│➸ 2X = KICK
 ╰──────────···
 	`.trim()
   let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
@@ -23,8 +23,8 @@ let krizyn = `
            hydratedFooterText: '🤖 PILIH MENU BIBAWAH',
            hydratedButtons: [{
              urlButton: {
-               displayText: '🤖GroupBot🤖',
-               url: 'https://chat.whatsapp.com/Hs5rHr27xu49VRLgdliMfR'
+               displayText: '🤖GroupZiiStore🤖',
+               url: 'https://chat.whatsapp.com/BRUbgc97gWw4zGDH5eeteo'
              }
 
            },
