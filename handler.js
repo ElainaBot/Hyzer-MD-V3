@@ -722,6 +722,13 @@ module.exports = {
                 if (chat.detect) this.sendMessage(id, text, MessageType.extendedText, {
                     contextInfo: {
                         mentionedJid: this.parseMention(text)
+                break
+            case 'gamestore':
+                if (!text) text = (chat.sgamestore || this.sgamestore || conn.sdgamestore || '⫹⫺  〔⳹INFO USER⳹\n║Hai, %name!\n║Tersisa %limit Limit\n║Role %role\n║Level %level (%exp / %maxexp)\n║[%xp4levelup]\n║%totalexp XP secara Total\n⫹⫺  〔⳹TANGGAL⳹〕\n║Tanggal: %week %weton, %date\n║Tanggal Islam: %dateIslamic\n║Waktu: %time\n⫹⫺  〔⳹TIME⳹\n║Uptime: %uptime (%muptime)\n║Database: %rtotalreg dari %totalreg\n║Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB\n\n┌─「 MENU GAMESTORE 」\n├ 🔖FreeFire\n├ 🔖MobileLegends\n├ 🔖Pubg\n├ 🔖SpeedsDrifters \n├ 🔖ApexLegends\n├ 🔖GenshinImpact\n├ 🔖HonkaiImpact\n├ 🔖CallOfDutyMobile\n├ 🔖LeagueOfLegends\n├ 🔖ArenaOfValor\n├ 🔖OnePunchMan\n├ 🔖Payment\n├ 🔖FormatOrder\n├ 🔖Promo\n├ 🔖InfoUpdate\n├ 🔖Tutorial (Cara.Melakukan.Pembelian)\n└────')
+                text = text.replace('@user', '@' + participants[0].split('@')[0])
+                if (chat.detect) this.sendMessage(id, text, MessageType.extendedText, {
+                    contextInfo: {
+                        mentionedJid: this.parseMention(text)
                     }
                 })
                 break
