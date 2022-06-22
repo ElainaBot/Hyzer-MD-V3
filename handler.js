@@ -754,14 +754,14 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*Perintah ini Khusus ArullOfc*',
-        owner: '*Perintah ini Khusus ArullOfc*',
+        rowner: '*Perintah ini Khusus Zii*',
+        owner: '*Perintah ini Khusus Zii*',
         mods: '*Perintah ini hanya dapat digunakan oleh* _*Moderator*_ !',
         premium: '*Perintah ini hanya untuk member* _*Premium*_ !',
         group: '*Perintah ini hanya dapat digunakan di grup!*',
         private: '*Perintah ini hanya dapat digunakan di Chat Pribadi!*',
-        admin: '*Khusus Admin Cokk🗿*',
-        botAdmin: '*Bot Aja Bukan Admin Anj ‼️*',
+        admin: '*Khusus Admin Lahh🗿*',
+        botAdmin: '*Bot Aja Bukan Admin Anjer ‼️*',
         unreg: '*Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:*\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
