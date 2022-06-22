@@ -6,7 +6,7 @@ global.prems = ['']
 //=============『 Info Owner 』============== //
 global.nameowner = 'Zii'
 global.numberowner = '62881022864785'
-global.instagram = 'https://instagram.com/ziistore-id'
+global.instagram = 'https://instagram.com/ziistore_id'
 global.github = 'https://github.com/sahrull11'
 global.dana = '085320499721'
 global.pulsa = '085320499721,085320499721'
